@@ -1,0 +1,7 @@
+{
+  "name": "tdoionc",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
