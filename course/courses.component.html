@@ -1,0 +1,33 @@
+<table class="table table-inverse table-bordered customStyling">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Duration
+            </th>
+            <th>
+                Description
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let course of courses">
+            <td>
+                {{course.name }}
+            </td>
+            <td>
+                {{course.duration }}
+            </td>
+            <td>
+                {{course.description }}
+            </td>
+            <td>
+                <button class="btn btn-info" (click)="EditCourse(course.courseId)">Edit</button>
+                <button class="btn btn-danger" style="margin-left: 2px;" (click)="DeleteCourse(course.courseId)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
