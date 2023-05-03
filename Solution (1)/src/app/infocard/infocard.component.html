@@ -1,0 +1,7 @@
+<div class="card" style="width: 18rem;" *ngIf="info">
+    <img class="img-responsive" src="{{info.imgSrc}}">
+    <div class="card-body">
+        <span>{{info.filename | prefstrip}}</span>
+        <p>Uploaded at {{ info.date }}</p>  
+    </div>
+</div>
